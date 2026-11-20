@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WISE Research — исследовательская программа для школьников</title>
+  <meta name="description" content="WISE Research Institute: индивидуальная исследовательская программа для школьников с ментором уровня PhD. От идеи до публикации научной статьи.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ───────── Announcement ───────── -->
+  <div class="announce" id="announce">
+    <p><strong>Весенний поток 2027</strong> — приём заявок открыт <span class="sep">|</span> <a href="#" data-apply>Подать заявку →</a></p>
+    <button class="announce__close" aria-label="Закрыть" onclick="document.getElementById('announce').remove()">×</button>
+  </div>
+
+  <!-- ───────── Nav ───────── -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="logo" aria-label="WISE Research">
+        <span class="logo__mark">W</span>
+        <span class="logo__text">WISE<em>research</em></span>
+      </a>
+      <nav class="nav__links" aria-label="Основная навигация">
+        <a href="#how">Как это работает</a>
+        <a href="#formats">Форматы</a>
+        <a href="#mentors">Менторы</a>
+        <a href="#process">Процесс</a>
+        <a href="#admissions">Поступление</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#" class="btn btn--dark nav__cta" data-apply>Apply now</a>
+      <button class="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu">
+      <a href="#how">Как это работает</a>
+      <a href="#formats">Форматы</a>
+      <a href="#mentors">Менторы</a>
+      <a href="#process">Процесс</a>
+      <a href="#admissions">Поступление</a>
+      <a href="#faq">FAQ</a>
+      <a href="#" class="btn btn--accent" data-apply>Apply now</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ───────── Hero ───────── -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <p class="eyebrow reveal">WISE Research Institute</p>
+      <h1 class="hero__title">
+        <span class="line"><span>Где самые амбициозные</span></span>
+        <span class="line"><span>школьники <em class="scribble">публикуются<svg viewBox="0 0 300 30" preserveAspectRatio="none" aria-hidden="true"><path d="M4 22 C 60 6, 120 4, 180 12 S 270 24, 296 8"/></svg></em></span></span>
+        <span class="line"><span>ещё до университета</span></span>
+      </h1>
+      <p class="hero__sub reveal">Индивидуальная исследовательская программа с ментором уровня PhD: от первого вопроса до готовой научной статьи, конференции и сильного портфолио для Ivy League, Oxbridge и топ-вузов мира.</p>
+      <div class="hero__actions reveal">
+        <a href="#" class="btn btn--accent btn--lg" data-apply>Подать заявку <span class="arr">↗</span></a>
+        <a href="#how" class="btn btn--ghost btn--lg">Как это работает ↓</a>
+      </div>
+
+      <div class="hero__cards">
+        <article class="hcard reveal">
+          <div class="hcard__visual hcard__visual--paper">
+            <div class="mini-paper">
+              <span class="mini-paper__tag">Draft v3</span>
+              <i></i><i></i><i class="s"></i><i></i><i class="s"></i>
+            </div>
+          </div>
+          <div class="hcard__num"><span data-count="12">12</span></div>
+          <p>недель интенсивной работы над собственным исследованием</p>
+        </article>
+        <article class="hcard reveal">
+          <div class="hcard__visual hcard__visual--mentor">
+            <div class="avatar-stack"><span>PhD</span><span>MA</span><span>Prof</span></div>
+          </div>
+          <div class="hcard__num">1:1</div>
+          <p>персональный ментор из ведущих университетов мира</p>
+        </article>
+        <article class="hcard reveal">
+          <div class="hcard__visual hcard__visual--clock">
+            <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="32"/><path d="M40 20 V40 L54 48"/></svg>
+          </div>
+          <div class="hcard__num"><span data-count="22">22</span>+</div>
+          <p>часа лекций и индивидуальных встреч по программе</p>
+        </article>
+        <article class="hcard reveal">
+          <div class="hcard__visual hcard__visual--pub">
+            <span class="stamp">Published</span>
+          </div>
+          <div class="hcard__num">∞</div>
+          <p>научная статья в портфолио — навсегда, с вашим именем как автора</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────── Research matters ───────── -->
+    <section class="matters" id="why">
+      <div class="matters__text">
+        <h2 class="display reveal">Исследование<br><em>решает</em></h2>
+        <p class="lead reveal">Для сильных абитуриентов исследование — уже не «плюс», а <strong>фундамент</strong>. Приёмные комиссии топ-университетов ищут не оценки, а доказательство интеллектуальной самостоятельности: умение задать вопрос, найти ответ и защитить его.</p>
+        <p class="reveal">WISE Research помогает построить это доказательство глубоко, строго и под руководством эксперта — неважно, впервые ли вы слышите слово «методология» или уже готовы публиковать первую статью.</p>
+        <a href="#how" class="btn btn--ghost reveal">Смотреть, как это работает ↓</a>
+      </div>
+      <div class="matters__visual reveal" aria-hidden="true">
+        <div class="shape"></div>
+        <div class="paper">
+          <div class="paper__head">
+            <span>WISE Research Journal · Vol. 3</span>
+            <span>2027</span>
+          </div>
+          <h3>Machine learning approaches to early drought prediction in Central Asian agriculture</h3>
+          <p class="paper__author">Student Author¹, Mentor Name, PhD²</p>
+          <p class="paper__label">Abstract</p>
+          <div class="paper__lines"><i></i><i></i><i></i><i class="s"></i><i></i><i></i><i class="xs"></i></div>
+          <div class="paper__fig">
+            <svg viewBox="0 0 200 70"><polyline points="0,60 25,52 50,55 75,38 100,40 125,24 150,28 175,12 200,8"/><polyline class="b" points="0,62 25,60 50,58 75,54 100,50 125,48 150,42 175,40 200,36"/></svg>
+            <span>Fig. 1</span>
+          </div>
+          <div class="paper__lines"><i></i><i class="s"></i><i></i></div>
+          <span class="paper__badge">✓ Peer reviewed</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── Why research (5 reasons) ───────── -->
+    <section class="reasons">
+      <div class="section-head">
+        <p class="eyebrow reveal">Зачем исследование</p>
+        <h2 class="display reveal">Профиль, который <em>невозможно</em> скопировать</h2>
+      </div>
+      <div class="reasons__grid">
+        <article class="reason reveal">
+          <span class="reason__n">01</span>
+          <h3>Поступление</h3>
+          <p>Университеты ценят тех, кто превращает интерес в реальный проект. Исследование по теме, которая важна именно вам, выделит вас среди тысяч заявок.</p>
+        </article>
+        <article class="reason reveal">
+          <span class="reason__n">02</span>
+          <h3>Критическое мышление</h3>
+          <p>Научитесь задавать вопросы, анализировать и оценивать источники. В эпоху информационного шума это не просто академический навык — это навык выживания.</p>
+        </article>
+        <article class="reason reveal">
+          <span class="reason__n">03</span>
+          <h3>Управление проектом</h3>
+          <p>Чёткие дедлайны и ответственность перед ментором. Умение планировать время и доводить дело до конца останется с вами на всю жизнь.</p>
+        </article>
+        <article class="reason reveal">
+          <span class="reason__n">04</span>
+          <h3>Объяснять сложное</h3>
+          <p>Знания не должны оставаться в черновике. Вы научитесь представлять сложные идеи разной аудитории — от жюри конкурса до приёмной комиссии.</p>
+        </article>
+        <article class="reason reveal">
+          <span class="reason__n">05</span>
+          <h3>Карьера</h3>
+          <p>Понять проблему, найти решение и убедительно его презентовать — фундамент успеха в любой профессии. Вы выйдете с готовым кейсом.</p>
+        </article>
+        <article class="reason reason--cta reveal">
+          <h3>Готовы начать свой путь в науке?</h3>
+          <a href="#" class="btn btn--light" data-apply>Подать заявку ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────── How it works (01–05) ───────── -->
+    <section class="how" id="how">
+      <div class="section-head">
+        <p class="eyebrow reveal">Как это работает</p>
+        <h2 class="display reveal">Пять шагов от <em>идеи</em> до статьи</h2>
+      </div>
+
+      <div class="how__layout">
+        <aside class="how__sticky" aria-hidden="true">
+          <div class="how__counter"><span class="how__current">01</span><span class="how__total">/05</span></div>
+          <div class="how__bar"><span></span></div>
+        </aside>
+
+        <div class="how__steps">
+          <article class="step" data-step="01">
+            <span class="step__n">01</span>
+            <h3>Определите цель исследования</h3>
+            <p>О чём вы мечтаете? Победить на ISEF? Опубликовать статью? Выступить на конференции? Или пока только присматриваетесь к науке? Мы вместе поставим амбициозные, но достижимые цели под ваши интересы и план поступления.</p>
+            <div class="goal-chips">
+              <span>🏆 Победа на олимпиаде / ISEF</span>
+              <span>📄 Публикация в журнале</span>
+              <span>🎤 Выступление на конференции</span>
+              <span>🎓 Сильное эссе для поступления</span>
+              <span>🧭 Пока исследую варианты</span>
+            </div>
+          </article>
+
+          <article class="step" data-step="02" id="formats">
+            <span class="step__n">02</span>
+            <h3>Выберите формат обучения</h3>
+            <p>Гибкие форматы — под ваш характер, цели и расписание. Выберите формат, чтобы увидеть детали:</p>
+            <div class="modes">
+              <div class="modes__tabs" role="tablist">
+                <button role="tab" aria-selected="true" data-mode="0">Онлайн 1:1</button>
+                <button role="tab" aria-selected="false" data-mode="1">Онлайн группа</button>
+                <button role="tab" aria-selected="false" data-mode="2">Интенсив</button>
+                <button role="tab" aria-selected="false" data-mode="3">Premium</button>
+              </div>
+              <div class="modes__panel" role="tabpanel">
+                <div class="modes__info">
+                  <h4 data-m="title">Индивидуальная онлайн-программа</h4>
+                  <p data-m="desc">Самостоятельное исследование на тему по вашему выбору с персональным ментором. Максимум гибкости и глубины.</p>
+                  <dl>
+                    <div><dt>Длительность</dt><dd data-m="dur">12 недель</dd></div>
+                    <div><dt>Встречи 1:1</dt><dd data-m="meet">14+ часов</dd></div>
+                    <div><dt>Итог</dt><dd data-m="out">Научная статья</dd></div>
+                    <div><dt>Подходит</dt><dd data-m="fit">9–12 классы</dd></div>
+                  </dl>
+                  <a href="#" class="btn btn--dark" data-apply>Подать заявку ↗</a>
+                </div>
+                <div class="modes__art" aria-hidden="true"><span data-m="emoji">💻</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="step" data-step="03">
+            <span class="step__n">03</span>
+            <h3>Выберите направление</h3>
+            <p>Любая тема, свой темп, своя цель. Мы поддерживаем практически любую область, которая вызывает у вас настоящий интерес — от STEM и AI до гуманитарных и социальных наук.</p>
+            <div class="subjects">
+              <span>Computer Science</span><span>Искусственный интеллект</span><span>Биология</span><span>Медицина</span><span>Химия</span><span>Физика</span><span>Математика</span><span>Экономика</span><span>Бизнес</span><span>Психология</span><span>Международные отношения</span><span>Право</span><span>Политология</span><span>История</span><span>Философия</span><span>Экология</span><span>Нейронауки</span><span>Литература</span><span>Социология</span><span>Инженерия</span><span>+ ваша тема</span>
+            </div>
+          </article>
+
+          <article class="step" data-step="04">
+            <span class="step__n">04</span>
+            <h3>Познакомьтесь с ментором</h3>
+            <p>По итогам анкеты и интервью мы подберём вам ментора — PhD-исследователя или преподавателя ведущего университета. Обычно предлагаем пару вариантов, иногда совпадение очевидно сразу. Вы принимаете кандидатуру или просите альтернативу.</p>
+            <div class="match">
+              <div class="match__card"><b>Вы</b><small>Интерес: AI в медицине</small></div>
+              <div class="match__line"><span>match</span></div>
+              <div class="match__card match__card--m"><b>Ментор</b><small>PhD, Computer Science</small></div>
+            </div>
+          </article>
+
+          <article class="step" data-step="05">
+            <span class="step__n">05</span>
+            <h3>Проведите исследование</h3>
+            <p>Ментор ведёт вас через каждый этап: от формулировки исследовательского вопроса до подачи статьи в журнал. Самая строгая программа — чтобы вы получили и навыки, и результат, который усиливает заявку в университет.</p>
+            <a href="#process" class="btn btn--ghost">Смотреть все этапы →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── Mentors ───────── -->
+    <section class="mentors" id="mentors">
+      <div class="section-head section-head--row">
+        <div>
+          <p class="eyebrow reveal">Менторы</p>
+          <h2 class="display reveal">Учитесь у тех, кто <em>делает</em> науку</h2>
+        </div>
+        <p class="reveal mentors__note">PhD-исследователи и преподаватели ведущих университетов США, Великобритании, Европы и Азии.</p>
+      </div>
+      <div class="marquee" aria-label="Наши менторы">
+        <div class="marquee__track" id="mentorTrack"></div>
+      </div>
+    </section>
+
+    <!-- ───────── Process (6 stages) ───────── -->
+    <section class="process" id="process">
+      <div class="section-head">
+        <p class="eyebrow reveal">Этапы</p>
+        <h2 class="display reveal">Мы рядом <em>на каждом</em> шаге</h2>
+      </div>
+      <ol class="timeline">
+        <li class="reveal"><span class="timeline__dot">1</span><h3>Идея</h3><p>Превращаем ваши интересы в чёткую концепцию и уникальную тему.</p></li>
+        <li class="reveal"><span class="timeline__dot">2</span><h3>Исследование</h3><p>Сбор данных и анализ источников. Работаете с научными базами как настоящий учёный.</p></li>
+        <li class="reveal"><span class="timeline__dot">3</span><h3>Черновик</h3><p>Структурируете мысли и пишете первую версию рукописи.</p></li>
+        <li class="reveal"><span class="timeline__dot">4</span><h3>Рецензия</h3><p>Обратная связь от экспертов и сверстников, строгая проверка фактов.</p></li>
+        <li class="reveal"><span class="timeline__dot">5</span><h3>Презентация</h3><p>Учитесь убеждать и представлять работу на симпозиуме.</p></li>
+        <li class="reveal"><span class="timeline__dot">6</span><h3>Публикация</h3><p>Финал: работа выходит в свет и навсегда остаётся в вашем портфолио.</p></li>
+      </ol>
+    </section>
+
+    <!-- ───────── Components ───────── -->
+    <section class="components">
+      <div class="section-head">
+        <p class="eyebrow reveal">Что входит</p>
+        <h2 class="display reveal">Состав <em>программы</em></h2>
+      </div>
+      <div class="bento">
+        <article class="bento__item bento__item--big reveal">
+          <span class="bento__kpi"><span data-count="14">14</span>+ ч</span>
+          <h3>Индивидуальные встречи 1:1</h3>
+          <p>Каждый проект уникален. Персональные сессии с ментором, где обратная связь точно под ваш текст, данные и цели.</p>
+        </article>
+        <article class="bento__item reveal">
+          <span class="bento__kpi"><span data-count="8">8</span>+ ч</span>
+          <h3>Лекции</h3>
+          <p>Весь цикл: от исследовательского вопроса и анализа источников до подготовки к публикации.</p>
+        </article>
+        <article class="bento__item reveal">
+          <span class="bento__icon">📚</span>
+          <h3>Научные базы данных</h3>
+          <p>Доступ к ключевым базам и навык выбирать лучшие источники.</p>
+        </article>
+        <article class="bento__item reveal">
+          <span class="bento__icon">🎤</span>
+          <h3>Исследовательский симпозиум</h3>
+          <p>Каждый поток — возможность выступить со своей работой перед аудиторией.</p>
+        </article>
+        <article class="bento__item reveal">
+          <span class="bento__icon">📄</span>
+          <h3>Подготовка к публикации</h3>
+          <p>Помогаем выбрать журнал или конкурс и довести статью до финиша.</p>
+        </article>
+        <article class="bento__item bento__item--accent reveal">
+          <span class="bento__icon">🎓</span>
+          <h3>Поступление и карьера</h3>
+          <p>Как правильно подать исследование в Common App, эссе и резюме. Связка с каталогом программ WISE.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────── Outlets ───────── -->
+    <section class="outlets">
+      <p class="eyebrow reveal">Куда можно подать работу</p>
+      <div class="marquee marquee--text">
+        <div class="marquee__track marquee__track--slow">
+          <span>Journal of Emerging Investigators</span><span>✦</span><span>The Concord Review</span><span>✦</span><span>Regeneron ISEF</span><span>✦</span><span>Curieux Academic Journal</span><span>✦</span><span>John Locke Essay Competition</span><span>✦</span><span>Columbia Junior Science Journal</span><span>✦</span><span>Breakthrough Junior Challenge</span><span>✦</span><span>National High School Journal of Science</span><span>✦</span>
+          <span>Journal of Emerging Investigators</span><span>✦</span><span>The Concord Review</span><span>✦</span><span>Regeneron ISEF</span><span>✦</span><span>Curieux Academic Journal</span><span>✦</span><span>John Locke Essay Competition</span><span>✦</span><span>Columbia Junior Science Journal</span><span>✦</span><span>Breakthrough Junior Challenge</span><span>✦</span><span>National High School Journal of Science</span><span>✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── Admissions ───────── -->
+    <section class="admissions" id="admissions">
+      <div class="admissions__card">
+        <div class="admissions__left">
+          <p class="eyebrow eyebrow--light reveal">Поступление</p>
+          <h2 class="display display--light reveal">Как <em>попасть</em> в программу</h2>
+          <p class="reveal">Набор ограничен — мы берём столько студентов, сколько можем обеспечить сильными менторами. Заявки рассматриваются по мере поступления.</p>
+          <div class="deadlines reveal">
+            <div><span>Весенний поток</span><b>до 15 января 2027</b></div>
+            <div><span>Летний поток</span><b>до 1 апреля 2027</b></div>
+            <div><span>Осенний поток</span><b>до 1 августа 2027</b></div>
+          </div>
+        </div>
+        <ol class="admissions__steps">
+          <li class="reveal"><span>01</span><div><h3>Онлайн-заявка</h3><p>10–15 минут: интересы, класс, цели. Без эссе и рекомендаций.</p></div></li>
+          <li class="reveal"><span>02</span><div><h3>Интервью</h3><p>Короткий звонок, чтобы понять ваш уровень и мотивацию.</p></div></li>
+          <li class="reveal"><span>03</span><div><h3>Подбор ментора</h3><p>Предлагаем ментора под вашу тему и цели.</p></div></li>
+          <li class="reveal"><span>04</span><div><h3>Старт</h3><p>Первая встреча, план исследования и график.</p></div></li>
+          <li class="admissions__cta reveal"><a href="#" class="btn btn--accent btn--lg" data-apply>Apply now <span class="arr">↗</span></a><small>Возможны гранты и частичные стипендии</small></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ───────── FAQ ───────── -->
+    <section class="faq" id="faq">
+      <div class="section-head">
+        <p class="eyebrow reveal">FAQ</p>
+        <h2 class="display reveal">Частые <em>вопросы</em></h2>
+      </div>
+      <div class="faq__list">
+        <details class="reveal">
+          <summary>У меня нет опыта в исследованиях. Стоит ли подавать заявку?</summary>
+          <p>Да. Большинство студентов приходят без опыта — программа построена так, чтобы научить всему с нуля: от формулировки вопроса до оформления статьи.</p>
+        </details>
+        <details class="reveal">
+          <summary>Занятия проходят онлайн или офлайн?</summary>
+          <p>Основной формат — онлайн, что позволяет работать с менторами из любой точки мира. Интенсивы и симпозиумы могут проходить офлайн.</p>
+        </details>
+        <details class="reveal">
+          <summary>С какого класса можно участвовать?</summary>
+          <p>Программа рассчитана на учеников 8–12 классов, а также студентов первых курсов. Уровень сложности подбирается индивидуально.</p>
+        </details>
+        <details class="reveal">
+          <summary>Гарантируете ли вы публикацию?</summary>
+          <p>Публикацию не может честно гарантировать никто — решение принимает редакция журнала. Мы гарантируем, что ваша работа будет доведена до уровня, достойного подачи, и поможем выбрать подходящие журналы и конкурсы.</p>
+        </details>
+        <details class="reveal">
+          <summary>Что будет, если я пропущу занятие или дедлайн?</summary>
+          <p>Ничего страшного — встречу можно перенести. Но программа построена на строгих дедлайнах, потому что умение их соблюдать — часть навыков, которые вы получаете.</p>
+        </details>
+        <details class="reveal">
+          <summary>Я не уверен(а), что мне нужно именно исследование</summary>
+          <p>Подайте заявку — на интервью мы честно скажем, подходит ли вам программа, или лучше выбрать летнюю программу из каталога WISE.</p>
+        </details>
+        <details class="reveal">
+          <summary>Есть ли финансовая помощь?</summary>
+          <p>Да, мы предлагаем гранты и частичные стипендии на основе мотивации и потребности. Укажите это в заявке.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ───────── Final CTA ───────── -->
+    <section class="final">
+      <h2 class="final__title reveal">Ваше первое<br><em>исследование</em> начинается здесь</h2>
+      <a href="#" class="btn btn--accent btn--xl reveal" data-apply>Apply now <span class="arr">↗</span></a>
+    </section>
+  </main>
+
+  <!-- ───────── Footer ───────── -->
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="#top" class="logo logo--light">
+        <span class="logo__mark">W</span>
+        <span class="logo__text">WISE<em>research</em></span>
+      </a>
+      <div class="footer__cols">
+        <div>
+          <h4>Программа</h4>
+          <a href="#how">Как это работает</a>
+          <a href="#formats">Форматы</a>
+          <a href="#mentors">Менторы</a>
+          <a href="#admissions">Поступление</a>
+        </div>
+        <div>
+          <h4>WISE</h4>
+          <a href="https://cowboyybob.github.io/wise/wisep.html" target="_blank" rel="noopener">Летние программы</a>
+          <a href="https://cowboyybob.github.io/wise/wisep.html" target="_blank" rel="noopener">Зимние программы</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <a href="#" data-contact="telegram">Telegram</a>
+          <a href="#" data-contact="instagram">Instagram</a>
+          <a href="#" data-contact="whatsapp">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 WISE — World International Study Experience</span>
+      <span>WISE Research Institute</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
